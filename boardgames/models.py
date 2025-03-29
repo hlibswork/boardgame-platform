@@ -3,9 +3,16 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 
+class BoardGameGenre(models.Model):
+    name = models.CharField(max_length=100, unique=True)
+
+    def __str__(self):
+        return self.name
+
+
 class BoardGame(models.Model):
     title = models.CharField(max_length=255, unique=True)
-    genre = models.CharField(max_length=255)
+    genre = models.ForeignKey(BoardGameGenre, on_delete=models.SET_NULL, null=True)
     min_players = models.IntegerField()
     max_players = models.IntegerField()
     description = models.TextField()
