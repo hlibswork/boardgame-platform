@@ -1,2 +1,4 @@
 .idea
 venv
+/boardgames/management/commands/
+/boardgames/migrations/
