@@ -30,7 +30,7 @@
     <ul>
       {% for event in events %}
         <li class="mb-2">
-  <strong>{{ event.title }}</strong><br>
+          <strong><a href="{% url "boardgames:event-detail" pk=event.id %}">{{ event.title }}</a></strong><br>
   <span>{{ event.date|date:"F j, Y, H:i" }} — {{ event.host }} — {{ event.location }}</span>
 </li>
       {% endfor %}

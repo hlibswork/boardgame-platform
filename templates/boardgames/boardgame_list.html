@@ -30,7 +30,7 @@
     <ul>
       {% for game in boardgames %}
         <li>
-          <a href="#">{{ game.id }}</a>
+          <a href="{% url "boardgames:board-game-detail" pk=game.id %}">{{ game.id }}</a>
           {{ game.title }} ({{ game.genre }})
         </li>
       {% endfor %}

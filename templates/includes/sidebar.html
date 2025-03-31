@@ -1,7 +1,7 @@
 <ul>
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Blog</a></li>
+              <li class="active"><a href="{% url "boardgames:index" %}">Home</a></li>
+              <li><a href="{% url "boardgames:board-game-list" %}">Boardgames</a></li>
+              <li><a href="{% url "boardgames:event-list" %}">Events</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
 </ul>

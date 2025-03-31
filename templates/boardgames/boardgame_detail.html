@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <h2>{{ boardgame.title }}</h2>
+  <p><strong>Genre:</strong> {{ boardgame.genre.name }}</p>
+  <p><strong>Players:</strong> {{ boardgame.min_players }} - {{ boardgame.max_players }}</p>
+  <p><strong>Description:</strong> {{ boardgame.description }}</p>
+  <img src="{{ boardgame.image_url }}" alt="{{ boardgame.title }}" width="300">
+{% endblock %}

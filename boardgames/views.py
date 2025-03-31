@@ -37,3 +37,13 @@ class PlayerListView(generic.ListView):
     model = Player
     context_object_name = "players"
     paginate_by = 5
+
+
+class BoardGameDetailView(generic.DetailView):
+    model = BoardGame
+    context_object_name = "boardgame"
+
+
+class EventDetailView(generic.DetailView):
+    model = Event
+    context_object_name = "event"
