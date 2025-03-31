@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 from django.utils import timezone
 from django.views import generic
@@ -28,7 +29,7 @@ class BoardGameListView(generic.ListView):
     paginate_by = 5
 
 
-class EventListView(generic.ListView):
+class EventListView(LoginRequiredMixin, generic.ListView):
     model = Event
     context_object_name = "events"
     paginate_by = 5
@@ -37,7 +38,7 @@ class EventListView(generic.ListView):
         return Event.objects.filter(date__gte=timezone.now()).order_by("date")
 
 
-class PlayerListView(generic.ListView):
+class PlayerListView(LoginRequiredMixin, generic.ListView):
     model = Player
     context_object_name = "players"
     paginate_by = 5
@@ -48,6 +49,6 @@ class BoardGameDetailView(generic.DetailView):
     context_object_name = "boardgame"
 
 
-class EventDetailView(generic.DetailView):
+class EventDetailView(LoginRequiredMixin, generic.DetailView):
     model = Event
     context_object_name = "event"
