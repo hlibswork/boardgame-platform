@@ -2,3 +2,4 @@
 venv
 /boardgames/management/commands/
 /boardgames/migrations/
+/boardgames_data.json
