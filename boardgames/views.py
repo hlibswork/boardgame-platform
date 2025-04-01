@@ -1,5 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
+from django.urls import reverse_lazy
 from django.utils import timezone
 from django.views import generic
 
@@ -52,3 +53,10 @@ class BoardGameDetailView(generic.DetailView):
 class EventDetailView(LoginRequiredMixin, generic.DetailView):
     model = Event
     context_object_name = "event"
+
+
+class EventCreateView(LoginRequiredMixin, generic.CreateView):
+    model = Event
+    fields = "__all__"
+    success_url = reverse_lazy("boardgames:event-list")
+
