@@ -2,7 +2,17 @@
 
 {% block content %}
 
+
   <h2>{{ event.title }}</h2>
+  <form method="post" action="{% url 'boardgames:event-toggle' event.pk %}">
+  {% csrf_token %}
+  {% if registration.status == "Registered" %}
+    <button class="btn btn-danger">Cancel participation in the event</button>
+  {% else %}
+    <button class="btn btn-success">Sign up for an event</button>
+  {% endif %}
+</form>
+
   <p><strong>The best host:</strong> {{ event.host }}</p>
   <p><strong>Game:</strong> {{ event.game }}</p>
   <p><strong>Date:</strong> {{ event.date|date:"F j, Y, H:i" }}</p>

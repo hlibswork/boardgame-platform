@@ -1,10 +1,10 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy
 from django.utils import timezone
 from django.views import generic
 
-from boardgames.models import BoardGame, Player, Event
+from boardgames.models import BoardGame, Player, Event, Registration
 
 
 def index(request):
@@ -54,9 +54,39 @@ class EventDetailView(LoginRequiredMixin, generic.DetailView):
     model = Event
     context_object_name = "event"
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        event = self.get_object()
+
+        registration = Registration.objects.filter(
+            player=self.request.user, event=event
+        ).first()
+
+        context["registration"] = registration
+        return context
+
 
 class EventCreateView(LoginRequiredMixin, generic.CreateView):
     model = Event
     fields = "__all__"
     success_url = reverse_lazy("boardgames:event-list")
 
+
+def toggle_assign_to_event(request, pk):
+    event = get_object_or_404(Event, pk=pk)
+    registration = Registration.objects.filter(
+        player=request.user, event=event
+    ).first()
+
+    if registration:
+        if registration.status == "Registered":
+            registration.status = "Canceled"
+        else:
+            registration.status = "Registered"
+        registration.save()
+    else:
+        Registration.objects.create(
+            player=request.user, event=event, status="Registered"
+        )
+
+    return redirect("boardgames:event-detail", pk=pk)
