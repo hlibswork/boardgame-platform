@@ -72,6 +72,18 @@ class EventCreateView(LoginRequiredMixin, generic.CreateView):
     success_url = reverse_lazy("boardgames:event-list")
 
 
+class EventDeleteView(LoginRequiredMixin, generic.DeleteView):
+    model = Event
+    fields = "__all__"
+    success_url = reverse_lazy("boardgames:event-list")
+
+
+class EventUpdateView(LoginRequiredMixin, generic.UpdateView):
+    model = Event
+    fields = "__all__"
+    success_url = reverse_lazy("boardgames:event-list")
+
+
 def toggle_assign_to_event(request, pk):
     event = get_object_or_404(Event, pk=pk)
     registration = Registration.objects.filter(

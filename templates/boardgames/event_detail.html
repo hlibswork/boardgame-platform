@@ -17,4 +17,14 @@
   <p><strong>Game:</strong> {{ event.game }}</p>
   <p><strong>Date:</strong> {{ event.date|date:"F j, Y, H:i" }}</p>
   <p><strong>Location:</strong> {{ event.location }}</p>
+
+  <h1>
+    <a href="{% url 'boardgames:event-delete' pk=event.id %}" class="btn btn-danger link-to-page">
+      Delete
+    </a>
+
+    <a href="{% url 'boardgames:event-update' pk=event.id %}" class="btn btn-primary">
+      Update
+    </a>
+  </h1>
 {% endblock %}
