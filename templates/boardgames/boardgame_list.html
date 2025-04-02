@@ -3,6 +3,13 @@
 
 {% block content %}
 
+  <h1>
+      Board games List
+      <a href="{% url 'boardgames:board-game-create' %}" class="btn btn-primary link-to-page">
+        Create
+      </a>
+    </h1>
+
   {% if boardgames %}
     <ul>
       {% for game in boardgames %}

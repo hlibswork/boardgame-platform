@@ -2,6 +2,15 @@
 
 
 {% block content %}
+
+  <h1>
+      Event List
+      <a href="{% url 'boardgames:event-create' %}" class="btn btn-primary link-to-page">
+        Create
+      </a>
+    </h1>
+
+
   {% if events %}
     <ul>
       {% for event in events %}

@@ -30,6 +30,29 @@ class BoardGameListView(generic.ListView):
     paginate_by = 5
 
 
+class BoardGameDetailView(generic.DetailView):
+    model = BoardGame
+    context_object_name = "boardgame"
+
+
+class BoardGameCreateView(LoginRequiredMixin, generic.CreateView):
+    model = BoardGame
+    fields = "__all__"
+    success_url = reverse_lazy("boardgames:board-game-list")
+
+
+class BoardGameDeleteView(LoginRequiredMixin, generic.DeleteView):
+    model = BoardGame
+    fields = "__all__"
+    success_url = reverse_lazy("boardgames:board-game-list")
+
+
+class BoardGameUpdateView(LoginRequiredMixin, generic.UpdateView):
+    model = BoardGame
+    fields = "__all__"
+    success_url = reverse_lazy("boardgames:board-game-list")
+
+
 class EventListView(LoginRequiredMixin, generic.ListView):
     model = Event
     context_object_name = "events"
@@ -45,9 +68,6 @@ class PlayerListView(LoginRequiredMixin, generic.ListView):
     paginate_by = 5
 
 
-class BoardGameDetailView(generic.DetailView):
-    model = BoardGame
-    context_object_name = "boardgame"
 
 
 class EventDetailView(LoginRequiredMixin, generic.DetailView):
