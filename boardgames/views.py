@@ -122,3 +122,16 @@ def toggle_assign_to_event(request, pk):
         )
 
     return redirect("boardgames:event-detail", pk=pk)
+
+
+class RegisteredEventsByUserListView(LoginRequiredMixin, generic.ListView):
+    model = Event
+    template_name = "boardgames/events_list_registered_user.html"
+    context_object_name = "events"
+    paginate_by = 10
+
+    def get_queryset(self):
+        return Event.objects.filter(
+            registrations__player=self.request.user,
+            registrations__status="Registered"
+        ).order_by("date").distinct()

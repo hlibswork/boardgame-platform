@@ -1,7 +1,7 @@
 from django.urls import path
 from boardgames.views import index, BoardGameListView, EventListView, PlayerListView, BoardGameDetailView, \
     EventDetailView, EventCreateView, toggle_assign_to_event, EventUpdateView, EventDeleteView, BoardGameCreateView, \
-    BoardGameUpdateView, BoardGameDeleteView
+    BoardGameUpdateView, BoardGameDeleteView, RegisteredEventsByUserListView
 
 app_name = "boardgames"
 urlpatterns = [
@@ -18,5 +18,5 @@ urlpatterns = [
     path("events/update/<int:pk>", EventUpdateView.as_view(), name="event-update"),
     path("events/delete/<int:pk>", EventDeleteView.as_view(), name="event-delete"),
     path("events/<int:pk>/toggle/", toggle_assign_to_event, name="event-toggle"),
-
+    path("my_events", RegisteredEventsByUserListView.as_view(), name="my-events"),
 ]
