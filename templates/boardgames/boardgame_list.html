@@ -22,5 +22,14 @@
   {% else %}
     <p>There are no games in our base</p>
   {% endif %}
+  {% block search %}
+
+  <form method="get" class="form-inline mb-4">
+  {{ search_form  }}
+  <button type="submit" class="btn btn-primary">
+    <i class="icon-search3"></i>
+  </button>
+</form>
+  {% endblock %}
 {% endblock %}
 

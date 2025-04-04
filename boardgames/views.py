@@ -4,6 +4,7 @@ from django.urls import reverse_lazy
 from django.utils import timezone
 from django.views import generic
 
+from boardgames.forms import EventGameSearchForm, BoardGameGenreSearchForm
 from boardgames.models import BoardGame, Player, Event, Registration
 
 
@@ -28,6 +29,19 @@ class BoardGameListView(generic.ListView):
     model = BoardGame
     context_object_name = "boardgames"
     paginate_by = 5
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super(BoardGameListView, self).get_context_data(**kwargs)
+
+        context["search_form"] = BoardGameGenreSearchForm()
+        return context
+
+    def get_queryset(self):
+        queryset = BoardGame.objects.all()
+        genre = self.request.GET.get("genre")
+        if genre:
+            queryset = queryset.filter(genre__name__icontains=genre)
+        return queryset
 
 
 class BoardGameDetailView(generic.DetailView):
@@ -58,16 +72,25 @@ class EventListView(LoginRequiredMixin, generic.ListView):
     context_object_name = "events"
     paginate_by = 5
 
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super(EventListView, self).get_context_data(**kwargs)
+
+        context["search_form"] = EventGameSearchForm()
+        return context
+
     def get_queryset(self):
-        return Event.objects.filter(date__gte=timezone.now()).order_by("date")
+        queryset = Event.objects.filter(date__gte=timezone.now()).order_by("date")
+        game = self.request.GET.get("game")
+        if game:
+            queryset = queryset.filter(game__title__icontains=game)
+
+        return queryset
 
 
 class PlayerListView(LoginRequiredMixin, generic.ListView):
     model = Player
     context_object_name = "players"
     paginate_by = 5
-
-
 
 
 class EventDetailView(LoginRequiredMixin, generic.DetailView):
