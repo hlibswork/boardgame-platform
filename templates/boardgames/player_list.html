@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+  {% if players %}
+    <ul>
+      {% for player in players %}
+        <li class="mb-2">
+  <strong>{{ player.username }}</strong><br>
+  <span>id - {{ player.id }} — {{ player.role}}</span>
+</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>There are no players in our base</p>
+  {% endif %}
+{% endblock %}
+

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+  <h1>
+      Board games List
+      <a href="{% url 'boardgames:board-game-create' %}" class="btn btn-primary link-to-page">
+        Create
+      </a>
+    </h1>
+
+  {% if boardgames %}
+    <ul>
+      {% for game in boardgames %}
+        <li>
+          <a href="{% url "boardgames:board-game-detail" pk=game.id %}">{{ game.id }}</a>
+          {{ game.title }} ({{ game.genre }})
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>There are no games in our base</p>
+  {% endif %}
+  {% block search %}
+
+  <form method="get" class="form-inline mb-4">
+  {{ search_form  }}
+  <button type="submit" class="btn btn-primary">
+    <i class="icon-search3"></i>
+  </button>
+</form>
+  {% endblock %}
+{% endblock %}
+
