@@ -8,11 +8,11 @@
   <p><strong>Description:</strong> {{ boardgame.description }}</p>
   <img src="{{ boardgame.image_url }}" alt="{{ boardgame.title }}" width="300">
   <h1>
-    <a href="{% url 'boardgames:board-game-delete' pk=event.id %}" class="btn btn-danger link-to-page">
+    <a href="{% url 'boardgames:board-game-delete' pk=boardgame.id %}" class="btn btn-danger link-to-page">
       Delete
     </a>
 
-    <a href="{% url 'boardgames:board-game-update' pk=event.id %}" class="btn btn-primary">
+    <a href="{% url 'boardgames:board-game-update' pk=boardgame.id %}" class="btn btn-primary">
       Update
     </a>
   </h1>
