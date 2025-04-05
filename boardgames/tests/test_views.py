@@ -34,7 +34,7 @@ class PrivateBoardGameTests(TestCase):
             min_players=2,
             max_players=4,
             description="Tiles",
-            image_url="https://example.com"
+            image_url="https://example.com",
         )
         game2 = BoardGame.objects.create(
             title="Catan",
@@ -42,7 +42,7 @@ class PrivateBoardGameTests(TestCase):
             min_players=3,
             max_players=4,
             description="Trading",
-            image_url="https://example.com"
+            image_url="https://example.com",
         )
         res = self.client.get(BOARDGAME_LIST_URL)
         self.assertEqual(res.status_code, 200)
@@ -66,7 +66,7 @@ class PrivateEventTests(TestCase):
             min_players=3,
             max_players=6,
             description="Imagination game",
-            image_url="https://example.com"
+            image_url="https://example.com",
         )
         event = Event.objects.create(
             title="Dixit Night",
@@ -74,7 +74,7 @@ class PrivateEventTests(TestCase):
             game=game,
             date=timezone.now() + timezone.timedelta(days=1),
             location="Cafe",
-            description="Creative fun"
+            description="Creative fun",
         )
         res = self.client.get(EVENT_LIST_URL)
         self.assertEqual(res.status_code, 200)

@@ -27,8 +27,8 @@ class Player(AbstractUser):
         ordering = ("username",)
 
     HOST_PLAYER_CHOICES = (
-        ('Player', 'Player'),
-        ('Host', 'Host'),
+        ("Player", "Player"),
+        ("Host", "Host"),
     )
     role = models.CharField(max_length=6, choices=HOST_PLAYER_CHOICES, default="Player")
     favorite_games = models.ManyToManyField(BoardGame, related_name="favorited_by")
@@ -43,7 +43,9 @@ class Event(models.Model):
         unique_together = ("title", "date")
 
     title = models.CharField(max_length=255)
-    host = models.ForeignKey(Player, on_delete=models.CASCADE, related_name="hosted_events")
+    host = models.ForeignKey(
+        Player, on_delete=models.CASCADE, related_name="hosted_events"
+    )
     game = models.ForeignKey(BoardGame, on_delete=models.CASCADE, related_name="events")
     date = models.DateTimeField()
     location = models.CharField(max_length=255)
@@ -58,12 +60,18 @@ class Registration(models.Model):
         unique_together = ("player", "event")
 
     REGISTER_CHOICES = (
-        ('Registered', 'Registered'),
-        ('Canceled', 'Canceled'),
+        ("Registered", "Registered"),
+        ("Canceled", "Canceled"),
     )
-    player = models.ForeignKey(Player, on_delete=models.CASCADE, related_name="registrations")
-    event = models.ForeignKey(Event, on_delete=models.CASCADE, related_name="registrations")
-    status = models.CharField(max_length=10, choices=REGISTER_CHOICES, default="Registered")
+    player = models.ForeignKey(
+        Player, on_delete=models.CASCADE, related_name="registrations"
+    )
+    event = models.ForeignKey(
+        Event, on_delete=models.CASCADE, related_name="registrations"
+    )
+    status = models.CharField(
+        max_length=10, choices=REGISTER_CHOICES, default="Registered"
+    )
     registered_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):

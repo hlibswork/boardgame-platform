@@ -14,7 +14,7 @@ class BoardGameAdmin(admin.ModelAdmin):
 @admin.register(Player)
 class PlayerAdmin(admin.ModelAdmin):
     list_display = ("username", "role")
-    list_filter = ("role", )
+    list_filter = ("role",)
     search_fields = ("username", "role")
 
 

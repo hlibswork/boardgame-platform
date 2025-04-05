@@ -129,9 +129,7 @@ class EventUpdateView(LoginRequiredMixin, generic.UpdateView):
 
 def toggle_assign_to_event(request, pk):
     event = get_object_or_404(Event, pk=pk)
-    registration = Registration.objects.filter(
-        player=request.user, event=event
-    ).first()
+    registration = Registration.objects.filter(player=request.user, event=event).first()
 
     if registration:
         if registration.status == "Registered":
@@ -154,7 +152,11 @@ class RegisteredEventsByUserListView(LoginRequiredMixin, generic.ListView):
     paginate_by = 10
 
     def get_queryset(self):
-        return Event.objects.filter(
-            registrations__player=self.request.user,
-            registrations__status="Registered"
-        ).order_by("date").distinct()
+        return (
+            Event.objects.filter(
+                registrations__player=self.request.user,
+                registrations__status="Registered",
+            )
+            .order_by("date")
+            .distinct()
+        )

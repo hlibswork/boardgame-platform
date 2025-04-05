@@ -1,13 +1,7 @@
 from django.test import TestCase
 from django.utils import timezone
 
-from boardgames.models import (
-    BoardGameGenre,
-    BoardGame,
-    Player,
-    Event,
-    Registration
-)
+from boardgames.models import BoardGameGenre, BoardGame, Player, Event, Registration
 
 
 class BoardGameModelsTest(TestCase):
@@ -19,17 +13,13 @@ class BoardGameModelsTest(TestCase):
             min_players=3,
             max_players=4,
             description="A strategy game of trading and building.",
-            image_url="https://example.com/catan.jpg"
+            image_url="https://example.com/catan.jpg",
         )
         self.player = Player.objects.create_user(
-            username="testuser",
-            password="testpass123",
-            role="Player"
+            username="testuser", password="testpass123", role="Player"
         )
         self.host = Player.objects.create_user(
-            username="hostuser",
-            password="hostpass123",
-            role="Host"
+            username="hostuser", password="hostpass123", role="Host"
         )
         self.event = Event.objects.create(
             title="Catan Evening",
@@ -37,7 +27,7 @@ class BoardGameModelsTest(TestCase):
             game=self.boardgame,
             date=timezone.now() + timezone.timedelta(days=1),
             location="Game Cafe",
-            description="Evening of strategic fun"
+            description="Evening of strategic fun",
         )
 
     def test_boardgamegenre_str(self):
@@ -55,14 +45,11 @@ class BoardGameModelsTest(TestCase):
         self.assertIn("Game Cafe", self.event.location)
 
     def test_registration_default_status(self):
-        registration = Registration.objects.create(
-            player=self.player,
-            event=self.event
-        )
+        registration = Registration.objects.create(player=self.player, event=self.event)
         self.assertEqual(registration.status, "Registered")
         self.assertEqual(
             str(registration),
-            f"Player {self.player.username} was Registered on {self.event}."
+            f"Player {self.player.username} was Registered on {self.event}.",
         )
 
     def test_player_favorite_games_many_to_many(self):

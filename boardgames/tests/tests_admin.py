@@ -16,17 +16,23 @@ class AdminSiteTest(TestCase):
 
         self.genre = BoardGameGenre.objects.create(name="Strategy")
         self.game = BoardGame.objects.create(
-            title="Catan", genre=self.genre,
-            min_players=3, max_players=4,
-            description="Strategy game", image_url="https://example.com"
+            title="Catan",
+            genre=self.genre,
+            min_players=3,
+            max_players=4,
+            description="Strategy game",
+            image_url="https://example.com",
         )
         self.host = get_user_model().objects.create_user(
             username="hostuser", password="123", role="Host"
         )
         self.event = Event.objects.create(
-            title="Catan Night", host=self.host, game=self.game,
+            title="Catan Night",
+            host=self.host,
+            game=self.game,
             date=timezone.now() + timezone.timedelta(days=1),
-            location="Cafe", description="Event desc"
+            location="Cafe",
+            description="Event desc",
         )
 
     def test_boardgame_genre_displayed_in_admin(self):
