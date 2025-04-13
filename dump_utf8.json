@@ -1,0 +1,1480 @@
+[
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 1,
+    "fields": {
+        "name": "Resource Management"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 2,
+    "fields": {
+        "name": "Tile Placement"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 3,
+    "fields": {
+        "name": "Route Building"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 4,
+    "fields": {
+        "name": "Cooperative"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 5,
+    "fields": {
+        "name": "Card Drafting"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 6,
+    "fields": {
+        "name": "Deck Building"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 7,
+    "fields": {
+        "name": "Abstract Strategy"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 8,
+    "fields": {
+        "name": "Engine Building"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 9,
+    "fields": {
+        "name": "Dice Rolling"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 10,
+    "fields": {
+        "name": "Deduction"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 11,
+    "fields": {
+        "name": "Word Game"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 12,
+    "fields": {
+        "name": "Horror"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 13,
+    "fields": {
+        "name": "Social Deduction"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 14,
+    "fields": {
+        "name": "Push Your Luck"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 15,
+    "fields": {
+        "name": "Strategy"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 16,
+    "fields": {
+        "name": "Asymmetric"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 17,
+    "fields": {
+        "name": "Area Control"
+    }
+},
+{
+    "model": "boardgames.boardgamegenre",
+    "pk": 18,
+    "fields": {
+        "name": "Dungeon Crawl"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 1,
+    "fields": {
+        "title": "Catan",
+        "genre": 1,
+        "min_players": 3,
+        "max_players": 4,
+        "description": "Trade resources and build your settlements to victory.",
+        "image_url": "https://m.media-amazon.com/images/I/91iOb49w2fL._AC_UF894,1000_QL80_.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 2,
+    "fields": {
+        "title": "Carcassonne",
+        "genre": 2,
+        "min_players": 2,
+        "max_players": 5,
+        "description": "Build cities and roads to score points.",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRShyPRPZ6zd24SqyMJTIgng4qumYxKCva2KQ&s"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 3,
+    "fields": {
+        "title": "Ticket to Ride",
+        "genre": 3,
+        "min_players": 2,
+        "max_players": 5,
+        "description": "Collect train cards to claim railway routes across the map.",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfqCpVPlbcr_FBW1PUA3v5pE8EqyxI4-M8jA&s"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 4,
+    "fields": {
+        "title": "Pandemic",
+        "genre": 4,
+        "min_players": 2,
+        "max_players": 4,
+        "description": "Work together to cure the world from deadly diseases.",
+        "image_url": "https://m.media-amazon.com/images/I/81YM+hxO0QL.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 5,
+    "fields": {
+        "title": "7 Wonders",
+        "genre": 5,
+        "min_players": 3,
+        "max_players": 7,
+        "description": "Develop your civilization through strategic card drafting.",
+        "image_url": "https://m.media-amazon.com/images/I/81fjX88VhtL.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 6,
+    "fields": {
+        "title": "Dominion",
+        "genre": 6,
+        "min_players": 2,
+        "max_players": 4,
+        "description": "Build your deck to gain the most victory points.",
+        "image_url": "https://cf.geekdo-images.com/Ny4RJv6E9-iUw7lH8axZAA__large/img/yhxOQSnbVOVJ7iTJjUx4G_8g10s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6767965.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 7,
+    "fields": {
+        "title": "Azul",
+        "genre": 7,
+        "min_players": 2,
+        "max_players": 4,
+        "description": "Draft tiles to complete beautiful patterns.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/en/0/0d/Azul_Board_Game.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 8,
+    "fields": {
+        "title": "Splendor",
+        "genre": 8,
+        "min_players": 2,
+        "max_players": 4,
+        "description": "Collect gems and develop your prestige.",
+        "image_url": "https://upload.wikimedia.org/wikipedia/en/1/12/Splendor_box_art.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 9,
+    "fields": {
+        "title": "King of Tokyo",
+        "genre": 9,
+        "min_players": 2,
+        "max_players": 6,
+        "description": "Battle to become the one true king of Tokyo.",
+        "image_url": "https://m.media-amazon.com/images/I/81W-lUJ+azL.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 10,
+    "fields": {
+        "title": "Love Letter",
+        "genre": 10,
+        "min_players": 2,
+        "max_players": 6,
+        "description": "Outwit your opponents and deliver your letter to the princess.",
+        "image_url": "https://media.wired.com/photos/59337e602a38e4432c4b9b7d/master/pass/LoveLetter-cards.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 11,
+    "fields": {
+        "title": "Codenames",
+        "genre": 11,
+        "min_players": 2,
+        "max_players": 8,
+        "description": "Give clever clues to find your team's agents.",
+        "image_url": "https://rozum.com.ua/upload/resize_cache/webp/iblock/3ef/2wkk7f8bo8enfvlfavk4zoc3c00hdo8s.webp"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 12,
+    "fields": {
+        "title": "Betrayal at House on the Hill",
+        "genre": 12,
+        "min_players": 3,
+        "max_players": 6,
+        "description": "Explore a haunted house until one of you betrays the rest.",
+        "image_url": "https://cdn.ecommercedns.uk/files/1/240241/3/18710103/f4541-prod-gms-betrayal-at-house-on-the-hill-054-nocrop-online-2.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 13,
+    "fields": {
+        "title": "The Resistance",
+        "genre": 13,
+        "min_players": 5,
+        "max_players": 10,
+        "description": "Root out the spies before they sabotage the resistance.",
+        "image_url": "https://m.media-amazon.com/images/I/71N88nhg7RL.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 14,
+    "fields": {
+        "title": "Patchwork",
+        "genre": 7,
+        "min_players": 2,
+        "max_players": 2,
+        "description": "Create the most beautiful quilt from fabric pieces.",
+        "image_url": "https://cf.geekdo-images.com/RDOwMRBnIb3Ehl6GyXj9xg__opengraph/img/qBR6U9r5b69OKV7Lc47g0Q-clJ8=/0x0:600x315/fit-in/1200x630/filters:strip_icc()/pic8669620.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 15,
+    "fields": {
+        "title": "Wingspan",
+        "genre": 8,
+        "min_players": 1,
+        "max_players": 5,
+        "description": "Build your bird sanctuary with unique birds and combos.",
+        "image_url": "https://m.media-amazon.com/images/I/91fhMkpO5kL.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 16,
+    "fields": {
+        "title": "Quacks of Quedlinburg",
+        "genre": 14,
+        "min_players": 2,
+        "max_players": 4,
+        "description": "Brew potions using risky ingredients for big rewards.",
+        "image_url": "https://m.media-amazon.com/images/I/81Yoqo9sU6L.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 17,
+    "fields": {
+        "title": "Terraforming Mars",
+        "genre": 15,
+        "min_players": 1,
+        "max_players": 5,
+        "description": "Compete to develop Mars for future civilization.",
+        "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2016/09/IMG_0971.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 18,
+    "fields": {
+        "title": "Root",
+        "genre": 16,
+        "min_players": 2,
+        "max_players": 4,
+        "description": "Battle for control of the woodland using unique faction abilities.",
+        "image_url": "https://ledergames.com/cdn/shop/products/1-RootGameBox-Edit-Web.png?v=1595294735"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 19,
+    "fields": {
+        "title": "Scythe",
+        "genre": 17,
+        "min_players": 1,
+        "max_players": 5,
+        "description": "Lead your faction to power in an alternate-history 1920s.",
+        "image_url": "https://m.media-amazon.com/images/I/718J3CexrNL.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 20,
+    "fields": {
+        "title": "Gloomhaven",
+        "genre": 18,
+        "min_players": 1,
+        "max_players": 4,
+        "description": "Epic tactical combat and legacy campaign in a dark world.",
+        "image_url": "https://m.media-amazon.com/images/I/81crhhZd63L._AC_UF894,1000_QL80_.jpg"
+    }
+},
+{
+    "model": "boardgames.boardgame",
+    "pk": 21,
+    "fields": {
+        "title": "Calico",
+        "genre": 7,
+        "min_players": 1,
+        "max_players": 4,
+        "description": "Calico is a puzzly tile-laying game of quilts and cats.",
+        "image_url": "https://cf.geekdo-images.com/qGkU6XsF1448F_A4P8TY5Q__itemrep/img/LOHi5NBdVoye0qNl9lixSGn0N8E=/fit-in/246x300/filters:strip_icc()/pic8124431.jpg"
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$XbnayG4rBeL6T403Mfj9jL$nVSqvmhodw7zW8F992ZTh0KGdoo38CJMyhBuSCkZV2s=",
+        "last_login": "2025-04-09T13:39:33.047Z",
+        "is_superuser": true,
+        "username": "Hlib",
+        "first_name": "",
+        "last_name": "",
+        "email": "hlib@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-03-29T00:55:52.421Z",
+        "role": "Player",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$Kl4m5vEUYN9tEehBYM64cJ$sQNsGJ3nq/MAlHpDpoSTtARVjIZblm4eLhKMiKgg0kE=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "host1",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:59:34.351Z",
+        "role": "Host",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$VQWk2VbBNkELFcyKO0nBzA$+lL/tnv+XHpi3c09jR8qYtzqDd1bUf6Y8QZuyk+vLiA=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "host2",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:59:34.714Z",
+        "role": "Host",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$cLz7aMd5Ml8RpfCAQ8u0GM$uqvpM2tGosfa08aSMlhKteT0pFZHIcc6CSuNdSWN2ps=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "host3",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:59:35.065Z",
+        "role": "Host",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$7fly6eU65LXHRnNOyauwak$JNF/3at7FhwJX2pcI61bhlrcb73gS5Bmlttb46XfVSU=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "host4",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:59:35.434Z",
+        "role": "Host",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$rLboNXGjonYR0Pcg84OhSs$BusBvjiN3T3JSBoqr3erhbvaZrVL2p6beJHD6OfPjG8=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "host5",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:59:35.764Z",
+        "role": "Host",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$7taD1O82kV6Q5x2CBNzixz$2ygJuJVhE0HYgcHDHz5nBmedoCPQaL2rz1nBIIGVf0E=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "player1",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:59:36.109Z",
+        "role": "Player",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$PGcMvqv5lzVgaNTW9OBJKS$oq73iO6TwkU3U+PLTIwA/cZ6EUZ2yYAn3ZuS2d5wfNc=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "player2",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:59:36.468Z",
+        "role": "Player",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$viddfeqzMOvTL4mc2HUQbX$3wM90i1O//r6ESaCL57uPrkvRf7gTDz7L4KB5uw6RoI=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "player3",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:59:36.792Z",
+        "role": "Player",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$izyT9ZYluVbYpISTzCCLgM$SHOAhr63CMnpSTzp8rf7p5aTlqVFCP6j74zpXHf/kHs=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "player4",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:59:37.138Z",
+        "role": "Player",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 11,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$Rer1UfjcrWiU5wicFpVf4k$bcQHrxyRRgsY+ysBypxG+UaT5Mq+jr1e3N2EKSyT6p0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "player5",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:59:37.497Z",
+        "role": "Player",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 12,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$obccKrhcxGSmJ9XX6ibGCZ$RkNBsUrW9Jv13G5q+S7G6yOvZRV8qzp0C4tS7yqjwW4=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "player6",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:59:37.827Z",
+        "role": "Player",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 13,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$OhfXd806S3gxdDoVwZRzMS$w0ao3ehptYE3O+vlDAuS2kJPh0fstlhvODmWZi9EN6c=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "player7",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:59:38.179Z",
+        "role": "Player",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 14,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1FEZOptvPL5c0Yqm0gsbo0$mmsBNPJhc8vnAMuwj2v7UkbA+W1P2OYbvD+Kkx6lzmc=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "player8",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:59:38.515Z",
+        "role": "Player",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 15,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$qdzvCedxKOMFvxxaXxBBwj$pSQOKf9mMD171Hw1Dk6pvqJTNDxkAYISyf+LZDGaV5Q=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "player9",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:59:38.845Z",
+        "role": "Player",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.player",
+    "pk": 16,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$fgsowq1ndxFSQG3jXyFWms$mABKJ8sH57zs4q+yBZaIewWwBF3p2OdlU9YKRbh/wik=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "player10",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:59:39.222Z",
+        "role": "Player",
+        "groups": [],
+        "user_permissions": [],
+        "favorite_games": []
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 1,
+    "fields": {
+        "title": "Terraforming Mars Session",
+        "host": 5,
+        "game": 17,
+        "date": "2025-02-28T18:00:40.237Z",
+        "location": "Game Cafe",
+        "description": "Let's play Terraforming Mars together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 2,
+    "fields": {
+        "title": "Root Session",
+        "host": 2,
+        "game": 18,
+        "date": "2025-04-12T18:00:40.241Z",
+        "location": "Online Discord",
+        "description": "Let's play Root together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 3,
+    "fields": {
+        "title": "Splendor Session",
+        "host": 6,
+        "game": 8,
+        "date": "2025-03-08T18:00:40.246Z",
+        "location": "Main Hall",
+        "description": "Let's play Splendor together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 4,
+    "fields": {
+        "title": "Azul Session",
+        "host": 4,
+        "game": 7,
+        "date": "2025-04-25T18:00:40Z",
+        "location": "Game Cafe",
+        "description": "Let's play Azul together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 5,
+    "fields": {
+        "title": "Root Session",
+        "host": 3,
+        "game": 18,
+        "date": "2025-03-01T18:00:40.253Z",
+        "location": "Game Cafe",
+        "description": "Let's play Root together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 6,
+    "fields": {
+        "title": "Quacks of Quedlinburg Session",
+        "host": 5,
+        "game": 16,
+        "date": "2025-03-17T18:00:40.256Z",
+        "location": "Central Library",
+        "description": "Let's play Quacks of Quedlinburg together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 7,
+    "fields": {
+        "title": "Dominion Session",
+        "host": 5,
+        "game": 6,
+        "date": "2025-03-17T18:00:40.260Z",
+        "location": "Park Table",
+        "description": "Let's play Dominion together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 8,
+    "fields": {
+        "title": "Catan Session",
+        "host": 3,
+        "game": 1,
+        "date": "2025-03-30T18:00:40.263Z",
+        "location": "Central Library",
+        "description": "Let's play Catan together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 9,
+    "fields": {
+        "title": "Azul Session",
+        "host": 3,
+        "game": 7,
+        "date": "2025-03-28T18:00:40.267Z",
+        "location": "Main Hall",
+        "description": "Let's play Azul together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 10,
+    "fields": {
+        "title": "Dominion Session",
+        "host": 6,
+        "game": 6,
+        "date": "2025-03-15T18:00:40.271Z",
+        "location": "Main Hall",
+        "description": "Let's play Dominion together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 11,
+    "fields": {
+        "title": "Azul Session",
+        "host": 6,
+        "game": 7,
+        "date": "2025-04-18T18:00:40Z",
+        "location": "Central Library",
+        "description": "Let's play Azul together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 12,
+    "fields": {
+        "title": "Betrayal at House on the Hill Session",
+        "host": 6,
+        "game": 12,
+        "date": "2025-04-27T18:00:40.278Z",
+        "location": "Main Hall",
+        "description": "Let's play Betrayal at House on the Hill together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 13,
+    "fields": {
+        "title": "Ticket to Ride Session",
+        "host": 6,
+        "game": 3,
+        "date": "2025-03-14T18:00:40.282Z",
+        "location": "Game Cafe",
+        "description": "Let's play Ticket to Ride together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 14,
+    "fields": {
+        "title": "Azul Session",
+        "host": 4,
+        "game": 7,
+        "date": "2025-04-14T18:00:40Z",
+        "location": "Game Cafe",
+        "description": "Let's play Azul together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 15,
+    "fields": {
+        "title": "Scythe Session",
+        "host": 5,
+        "game": 19,
+        "date": "2025-03-14T18:00:40.290Z",
+        "location": "Online Discord",
+        "description": "Let's play Scythe together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 16,
+    "fields": {
+        "title": "King of Tokyo Session",
+        "host": 3,
+        "game": 9,
+        "date": "2025-03-14T18:00:40.293Z",
+        "location": "Game Cafe",
+        "description": "Let's play King of Tokyo together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 17,
+    "fields": {
+        "title": "Betrayal at House on the Hill Session",
+        "host": 2,
+        "game": 12,
+        "date": "2025-03-26T18:00:40.297Z",
+        "location": "Park Table",
+        "description": "Let's play Betrayal at House on the Hill together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 18,
+    "fields": {
+        "title": "Carcassonne Session",
+        "host": 5,
+        "game": 2,
+        "date": "2025-04-28T18:00:40.301Z",
+        "location": "The Dice Lounge",
+        "description": "Let's play Carcassonne together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 19,
+    "fields": {
+        "title": "The Resistance Session",
+        "host": 4,
+        "game": 13,
+        "date": "2025-03-05T18:00:40.305Z",
+        "location": "Central Library",
+        "description": "Let's play The Resistance together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 20,
+    "fields": {
+        "title": "Splendor Session",
+        "host": 2,
+        "game": 8,
+        "date": "2025-04-26T18:00:40.308Z",
+        "location": "Park Table",
+        "description": "Let's play Splendor together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 21,
+    "fields": {
+        "title": "Terraforming Mars Session",
+        "host": 3,
+        "game": 17,
+        "date": "2025-03-20T18:00:40.312Z",
+        "location": "Main Hall",
+        "description": "Let's play Terraforming Mars together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 22,
+    "fields": {
+        "title": "Dominion Session",
+        "host": 5,
+        "game": 6,
+        "date": "2025-04-26T18:00:40.316Z",
+        "location": "Online Discord",
+        "description": "Let's play Dominion together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 23,
+    "fields": {
+        "title": "Betrayal at House on the Hill Session",
+        "host": 4,
+        "game": 12,
+        "date": "2025-03-10T18:00:40.319Z",
+        "location": "The Dice Lounge",
+        "description": "Let's play Betrayal at House on the Hill together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 24,
+    "fields": {
+        "title": "Dominion Session",
+        "host": 4,
+        "game": 6,
+        "date": "2025-03-31T18:00:40.323Z",
+        "location": "Online Discord",
+        "description": "Let's play Dominion together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 25,
+    "fields": {
+        "title": "Dominion Session",
+        "host": 6,
+        "game": 6,
+        "date": "2025-04-12T18:00:40.326Z",
+        "location": "Game Cafe",
+        "description": "Let's play Dominion together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 26,
+    "fields": {
+        "title": "Pandemic Session",
+        "host": 5,
+        "game": 4,
+        "date": "2025-03-04T18:00:40.330Z",
+        "location": "Main Hall",
+        "description": "Let's play Pandemic together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 27,
+    "fields": {
+        "title": "The Resistance Session",
+        "host": 6,
+        "game": 13,
+        "date": "2025-03-05T18:00:40.334Z",
+        "location": "The Dice Lounge",
+        "description": "Let's play The Resistance together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 28,
+    "fields": {
+        "title": "King of Tokyo Session",
+        "host": 6,
+        "game": 9,
+        "date": "2025-03-10T18:00:40.337Z",
+        "location": "Central Library",
+        "description": "Let's play King of Tokyo together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 29,
+    "fields": {
+        "title": "Gloomhaven Session",
+        "host": 6,
+        "game": 20,
+        "date": "2025-03-07T18:00:40.341Z",
+        "location": "Game Cafe",
+        "description": "Let's play Gloomhaven together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 32,
+    "fields": {
+        "title": "Love Letter Session",
+        "host": 3,
+        "game": 10,
+        "date": "2025-03-21T15:57:52.554Z",
+        "location": "Park Table",
+        "description": "Let's play Love Letter together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 33,
+    "fields": {
+        "title": "Calico Session",
+        "host": 3,
+        "game": 21,
+        "date": "2025-03-31T15:57:52.558Z",
+        "location": "Online Discord",
+        "description": "Let's play Calico together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 34,
+    "fields": {
+        "title": "Catan Session",
+        "host": 5,
+        "game": 1,
+        "date": "2025-04-17T15:57:52.564Z",
+        "location": "Central Library",
+        "description": "Let's play Catan together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 35,
+    "fields": {
+        "title": "Codenames Session",
+        "host": 2,
+        "game": 11,
+        "date": "2025-03-08T15:57:52.568Z",
+        "location": "Game Cafe",
+        "description": "Let's play Codenames together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 36,
+    "fields": {
+        "title": "Carcassonne Session",
+        "host": 3,
+        "game": 2,
+        "date": "2025-04-07T15:57:52.572Z",
+        "location": "Park Table",
+        "description": "Let's play Carcassonne together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 37,
+    "fields": {
+        "title": "7 Wonders Session",
+        "host": 4,
+        "game": 5,
+        "date": "2025-03-25T15:57:52.576Z",
+        "location": "The Dice Lounge",
+        "description": "Let's play 7 Wonders together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 38,
+    "fields": {
+        "title": "Dominion Session",
+        "host": 2,
+        "game": 6,
+        "date": "2025-04-21T15:57:52.581Z",
+        "location": "Main Hall",
+        "description": "Let's play Dominion together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 39,
+    "fields": {
+        "title": "Terraforming Mars Session",
+        "host": 3,
+        "game": 17,
+        "date": "2025-03-31T15:57:52.585Z",
+        "location": "Online Discord",
+        "description": "Let's play Terraforming Mars together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 40,
+    "fields": {
+        "title": "Azul Session",
+        "host": 6,
+        "game": 7,
+        "date": "2025-05-02T15:57:52.589Z",
+        "location": "Online Discord",
+        "description": "Let's play Azul together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 41,
+    "fields": {
+        "title": "Ticket to Ride Session",
+        "host": 5,
+        "game": 3,
+        "date": "2025-04-01T15:57:52.593Z",
+        "location": "Main Hall",
+        "description": "Let's play Ticket to Ride together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 42,
+    "fields": {
+        "title": "Dominion Session",
+        "host": 2,
+        "game": 6,
+        "date": "2025-03-22T15:57:52.598Z",
+        "location": "Park Table",
+        "description": "Let's play Dominion together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 43,
+    "fields": {
+        "title": "Root Session",
+        "host": 2,
+        "game": 18,
+        "date": "2025-03-15T15:57:52.603Z",
+        "location": "Main Hall",
+        "description": "Let's play Root together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 44,
+    "fields": {
+        "title": "Betrayal at House on the Hill Session",
+        "host": 4,
+        "game": 12,
+        "date": "2025-04-28T15:57:52.607Z",
+        "location": "The Dice Lounge",
+        "description": "Let's play Betrayal at House on the Hill together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 45,
+    "fields": {
+        "title": "The Resistance Session",
+        "host": 6,
+        "game": 13,
+        "date": "2025-04-25T15:57:52.611Z",
+        "location": "The Dice Lounge",
+        "description": "Let's play The Resistance together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 46,
+    "fields": {
+        "title": "7 Wonders Session",
+        "host": 6,
+        "game": 5,
+        "date": "2025-03-17T15:57:52.615Z",
+        "location": "Park Table",
+        "description": "Let's play 7 Wonders together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 47,
+    "fields": {
+        "title": "7 Wonders Session",
+        "host": 2,
+        "game": 5,
+        "date": "2025-03-10T15:57:52.621Z",
+        "location": "Park Table",
+        "description": "Let's play 7 Wonders together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 48,
+    "fields": {
+        "title": "Carcassonne Session",
+        "host": 5,
+        "game": 2,
+        "date": "2025-04-13T15:57:52.625Z",
+        "location": "Central Library",
+        "description": "Let's play Carcassonne together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 49,
+    "fields": {
+        "title": "Azul Session",
+        "host": 6,
+        "game": 7,
+        "date": "2025-04-07T15:57:52.629Z",
+        "location": "Main Hall",
+        "description": "Let's play Azul together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 50,
+    "fields": {
+        "title": "Patchwork Session",
+        "host": 5,
+        "game": 14,
+        "date": "2025-03-23T15:57:52.633Z",
+        "location": "Game Cafe",
+        "description": "Let's play Patchwork together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 51,
+    "fields": {
+        "title": "Splendor Session",
+        "host": 2,
+        "game": 8,
+        "date": "2025-03-18T15:57:52.637Z",
+        "location": "Online Discord",
+        "description": "Let's play Splendor together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 52,
+    "fields": {
+        "title": "Calico Session",
+        "host": 2,
+        "game": 21,
+        "date": "2025-04-02T15:57:52.641Z",
+        "location": "Central Library",
+        "description": "Let's play Calico together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 53,
+    "fields": {
+        "title": "Quacks of Quedlinburg Session",
+        "host": 5,
+        "game": 16,
+        "date": "2025-04-12T15:57:52.646Z",
+        "location": "Game Cafe",
+        "description": "Let's play Quacks of Quedlinburg together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 54,
+    "fields": {
+        "title": "Azul Session",
+        "host": 4,
+        "game": 7,
+        "date": "2025-04-28T15:57:52.650Z",
+        "location": "Game Cafe",
+        "description": "Let's play Azul together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 55,
+    "fields": {
+        "title": "Azul Session",
+        "host": 6,
+        "game": 7,
+        "date": "2025-04-09T15:57:52.654Z",
+        "location": "Central Library",
+        "description": "Let's play Azul together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 56,
+    "fields": {
+        "title": "7 Wonders Session",
+        "host": 2,
+        "game": 5,
+        "date": "2025-05-01T15:57:52.658Z",
+        "location": "Online Discord",
+        "description": "Let's play 7 Wonders together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 57,
+    "fields": {
+        "title": "Betrayal at House on the Hill Session",
+        "host": 6,
+        "game": 12,
+        "date": "2025-03-11T15:57:52.662Z",
+        "location": "The Dice Lounge",
+        "description": "Let's play Betrayal at House on the Hill together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 58,
+    "fields": {
+        "title": "Patchwork Session",
+        "host": 5,
+        "game": 14,
+        "date": "2025-03-05T15:57:52.666Z",
+        "location": "Main Hall",
+        "description": "Let's play Patchwork together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 59,
+    "fields": {
+        "title": "Codenames Session",
+        "host": 3,
+        "game": 11,
+        "date": "2025-03-29T15:57:52.672Z",
+        "location": "Game Cafe",
+        "description": "Let's play Codenames together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 60,
+    "fields": {
+        "title": "Carcassonne Session",
+        "host": 4,
+        "game": 2,
+        "date": "2025-04-08T15:57:52.676Z",
+        "location": "Game Cafe",
+        "description": "Let's play Carcassonne together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 61,
+    "fields": {
+        "title": "Quacks of Quedlinburg Session",
+        "host": 4,
+        "game": 16,
+        "date": "2025-03-17T15:57:52.681Z",
+        "location": "Park Table",
+        "description": "Let's play Quacks of Quedlinburg together!"
+    }
+},
+{
+    "model": "boardgames.event",
+    "pk": 62,
+    "fields": {
+        "title": "Calico",
+        "host": 1,
+        "game": 21,
+        "date": "2026-03-04T00:00:00Z",
+        "location": "Uk",
+        "description": "Calico"
+    }
+},
+{
+    "model": "boardgames.registration",
+    "pk": 7,
+    "fields": {
+        "player": 1,
+        "event": 25,
+        "status": "Canceled",
+        "registered_at": "2025-04-02T13:53:43.486Z"
+    }
+},
+{
+    "model": "boardgames.registration",
+    "pk": 9,
+    "fields": {
+        "player": 1,
+        "event": 14,
+        "status": "Canceled",
+        "registered_at": "2025-04-02T19:53:02.274Z"
+    }
+},
+{
+    "model": "boardgames.registration",
+    "pk": 10,
+    "fields": {
+        "player": 1,
+        "event": 2,
+        "status": "Registered",
+        "registered_at": "2025-04-09T13:40:00.326Z"
+    }
+},
+{
+    "model": "boardgames.registration",
+    "pk": 11,
+    "fields": {
+        "player": 1,
+        "event": 4,
+        "status": "Registered",
+        "registered_at": "2025-04-04T15:50:49.857Z"
+    }
+},
+{
+    "model": "boardgames.registration",
+    "pk": 12,
+    "fields": {
+        "player": 1,
+        "event": 36,
+        "status": "Registered",
+        "registered_at": "2025-04-04T15:57:59.540Z"
+    }
+},
+{
+    "model": "boardgames.registration",
+    "pk": 13,
+    "fields": {
+        "player": 1,
+        "event": 60,
+        "status": "Registered",
+        "registered_at": "2025-04-04T21:03:23.098Z"
+    }
+}
+]
